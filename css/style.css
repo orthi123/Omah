@@ -1,0 +1,528 @@
+/*========= common css start========== */
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+width: 1166px;
+margin: 0 auto;
+}
+body{
+  font-family: "Poppins", sans-serif;
+
+}
+/*========= common css start========== */ 
+
+
+/*========= navbar css start========== */
+nav{
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+}
+nav .nav_wrapper{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //logo chepta hoye gechilo eta thik kora
+}
+nav ul li{
+  display: inline-block;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+  transition: 0.4s;
+  position: relative;
+
+}
+/* nav ul li::after{
+  content:"after";
+}
+nav ul li::before{
+  content:"after" ;
+}
+emn koreo list er agee pore onk kichu add kora possible */
+nav ul li::before{
+  content: " ";
+/* width: 0%; 
+hover korar system niche ache*/
+height: 3px;
+background-color:#F6762E;
+position: absolute;
+border-radius: 5px;
+top: 28px;
+left: 0px;
+transition: 0.4s;
+left: 50%;
+transform: translateX(-50%);
+}
+
+nav ul li:hover{
+  font-weight: 600;
+  color:#203239 ;
+}
+nav ul li:hover::before{
+  width: 65%;
+}
+
+/*========= navbar css end========== */
+
+
+
+
+/*========= banner css start========== */
+#banner{
+  background-color: #EEEDDE;
+}
+.banner_wrapper{
+  display: flex;
+}
+#banner .banner_left{
+  width: 80%;
+  
+}
+#banner .banner_right{
+  width: 35%;
+  text-align:right;
+  padding-top: 168px;
+  padding-bottom: 120px;
+}
+
+#banner .banner_left h1{
+font-size: 56px;
+font-weight: 600;
+color: #203239;
+line-height: 150%;
+width: 777px;
+padding-top: 257px;
+}
+#banner .banner_left p{
+  font-size: 16px;
+  font-weight: 300;
+  color:rgba(32, 50, 57,0.55);
+  line-height: 150%;
+  width: 544px;
+  margin-top: 24px;
+  margin-bottom: 55px;
+  
+  }
+  #banner .banner_left input{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    padding-left: 56px;
+  }
+  #banner_left input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+   
+  } 
+  .Bannerlocation{
+    position: absolute;
+    top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size:24px;
+  }
+.banner_inputbox{
+  position: relative;
+}
+.banner_left a{
+  font: 16px;
+font-weight: 300;
+color:rgba(32, 50, 57,0.55);
+padding: 23px 41px;
+background-color: #FFFFFF;
+display:inline-block;
+text-decoration: none;
+border-radius: 15px;
+}
+.banner_inputwrapper{
+  display: flex;
+  gap: 15px;
+}
+
+/*========= banner css end========== */
+
+
+
+/*========= property css start========== */
+
+#property{
+  margin-top: 100px;
+  /* margin-bottom: 200px;  */
+}
+#property .item{
+  border: 1px solid transparent; 
+   width: 300px;
+  height: 300px; 
+ /* kapakapi off korar jonno */
+ 
+display: inline-block;
+padding: 20px 33px;
+border-radius: 10px;
+}
+#property .item:hover{
+
+  border: 1px solid #EEEDDE;
+
+}
+#property .item_top{
+  display: flex;
+  justify-content: space-between;
+  gap: 132px;
+  /* or,
+  justify-content: space-between; */
+  
+  }
+#property h2{
+font-size: 36px;
+font-weight: 600;
+width: 533px;
+color: #203239;
+line-height: 150%;
+
+}
+
+
+#property .item h4{
+font-size: 16px;
+font-weight: 500;
+color: #203239;
+position: relative;
+}
+/* #property .item h4::before{
+content: " ";
+width: 8px;
+height: 30px;
+border-radius: 6px;
+background-color: #FF7527;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+
+} */
+#property .item h5{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FF7527;
+  margin-right: -8px;
+  }
+#property .item h4::after{
+  content: " ";
+  width: 8px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #FF7527;
+  position: absolute;
+  top: 50%;
+  left: -33px;
+  transform: translateY(-50%);
+}
+#property .item p{
+  width: 235px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color:rgba(32, 50, 57,0.55);
+  margin-top: 8px;
+  }
+  #property .item .item_bottom a{
+    margin-top: 82px;
+  }
+  #property .item a{
+  
+    font-size: 16px;
+    font-weight: 500;
+    color:#203239;
+    margin-top:48px;
+    
+    display: inline-block;
+    /* text-decoration: none; */
+
+    }
+#property .item item_arrow{
+
+margin-left: 8px;
+
+}
+
+
+.item_wrapper{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 62px;
+}
+
+
+/*========= property css end========== */
+
+
+
+/*========= residen css start========== */
+
+
+#residen {
+  margin-top: 100px;
+  padding-top: 68px;
+  padding-bottom: 164px;
+  background: #EEEDDE;
+}
+
+#residen .residen_title h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FF7527;
+}
+
+#residen .residen_title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-top: 8px;
+}
+
+.residen_wrapper {
+  display: flex;
+}
+
+.residen_left {
+  width: 50%;
+  position: relative;
+  margin-top: 24px;
+
+}
+
+.residen_right {
+  width: 50%;
+}
+
+ .residen2 {
+  position: absolute;
+  top: 70px;
+  left: 165px;
+} 
+
+.residen_right h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #203239;
+  width: 507px;
+  margin-top: 50px;
+}
+
+.residen_right p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #203239;
+  width: 507px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.residen_btns a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #203239;
+  text-decoration: none;
+  padding: 13px 41px;
+  border: 1px solid #203239;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 48px;
+
+}
+
+.residen_btns {
+  display: flex;
+}
+
+ .residen_icon:hover {
+  background: #203239;
+  color: #FFFFFF;
+} 
+
+.residen_btns a:last-child {
+  margin-right: 12px;
+}
+
+.residen_icon {
+  margin-right: 12px;
+}
+
+/*========= residen css end========== */
+
+
+
+/* ===================pilihan css start===================== */
+#pilihan{
+  margin-top: 68px;
+}
+#pilihan .pilihan_titel h4{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FF7527;
+}
+#pilihan .pilihan_titel h2{
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-top: 8px;
+}
+.pilihan_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 68px;
+}
+.pilihan_wrapper .pilihan_left h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: #203239;
+  line-height: 150%;
+}
+.pilihan_wrapper .pilihan_left p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+  line-height: 30px;
+  width: 356px;
+}
+.pilihan_wrapper .pilihan_middle h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: #203239;
+  line-height: 150%;
+}
+.pilihan_wrapper .pilihan_middle p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+  line-height: 30px;
+  width: 356px;
+}
+.pilihan_wrapper .pilihan_right h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: #203239;
+  line-height: 150%;
+}
+.pilihan_wrapper .pilihan_right p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+  line-height: 30px;
+  width: 356px;
+}
+
+/* ===================pilihan css end===================== */
+
+
+
+
+/* ===================footer css start===================== */
+#footer{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #EEEDDE
+}
+.footer_wrapper .footer_left h2{
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-bottom: 74px;
+}
+.footer_left .box p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #203239;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.footer_left .box h5{
+  font-size: 16px;
+  font-weight: 400;
+  color: #203239;
+  margin-left: 98px;
+  margin-top: 8px;
+}
+.footer_left .box button{
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #203239;
+  width: 108px;
+  height: 44px;
+  border-radius: 5px;
+  margin-top: 27px;
+} 
+.footer_left .call_box .box{
+  width: 274px;
+  height: 167px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+.footer_left .call_box{
+  display: flex;
+  gap: 24px;
+}
+.footer_left .box i{
+  font-size: 34px;
+  position: absolute;
+  top: 29px;
+  left: 60px;
+}
+#footer .footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer_wrapper .footer_right h2{
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-bottom: 69px;
+
+}
+.footer_wrapper .footer_right{
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+/* ===================footer css end===================== */
+
+
+/* ===================bottom css start===================== */
+#bottom
+#bottom .icon{
+  display: flex;
+  gap: 64px;
+}
+#bottom .icon i{
+  font-size: 24px;
+  color: #FFFFFF;
+
+}
+#bottom .bottom_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#bottom{
+  background-color: #203239;
+  margin-bottom: 30px;
+  height: 104;
+}/* ===================bottom css end===================== */
